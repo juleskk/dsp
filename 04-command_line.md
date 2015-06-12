@@ -34,7 +34,7 @@ robocopy- roboust copy
 
 mv- move a file or directory
 
-more= page through a file
+more- page through a file
 
 type- print the whole file
 
@@ -44,7 +44,7 @@ dir -r- find files
 
 select-string- find things inside files
 
-help= read a manual page
+help- read a manual page
 
 helpctr- find what man page is appropriate
 
@@ -67,7 +67,7 @@ ICACLS- change ownnership
 
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+'ls' lists the contents of a directory
 
 ---
 
