@@ -12,7 +12,30 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+pwd- print working directory
+hostname- my computer's network name
+mkdir- make directory
+cd- change directory
+ls- list directory
+rmdir- remove directory
+pushd- push directory
+popd- pop directory
+cp- copy a file or directory
+robocopy- roboust copy
+mv- move a file or directory
+more= page through a file
+type= print the whole file
+forfiles- run a command on lots of files
+dir -r- find files
+select-string- find things inside files
+help= read a manual page
+helpctr- find what man page is appropriate
+echo- print some arguments
+set- export/set a new environment variable
+exit- exit the shell
+run as-*DANGER* run as super user moot
+attrib- change permission modifiers 
+ICACLS- change ownnership
 
 ---
 
