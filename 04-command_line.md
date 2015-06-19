@@ -62,6 +62,7 @@ Make a cheat sheet for yourself: a list of commands and what they do, focused on
 
 * ICACLS: change ownnership
 
+** -r (recurse): 
 ---
 
 
@@ -70,6 +71,16 @@ Make a cheat sheet for yourself: a list of commands and what they do, focused on
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
 'ls' lists the contents of a directory
+
+'ls -l' lists files in long format
+
+'ls -a' lists all files, including those that are invisible files 
+
+'ls -lh' prints long format files in a human readable format 
+
+All permutations of 'l' 'a' and 'h' are meaningful. 
+
+
 
 ---
 
