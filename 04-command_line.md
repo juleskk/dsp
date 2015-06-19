@@ -36,7 +36,9 @@ Make a cheat sheet for yourself: a list of commands and what they do, focused on
 
 * `mv`: move a file or directory
 
-* `more`: page through a file
+* `less` / `more`: page through a file
+
+* `cat`: stream a file 
 
 * `type`: print the whole file
 
