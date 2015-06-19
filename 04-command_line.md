@@ -74,7 +74,7 @@ What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations 
 
 `ls -l` lists files in long format
 
-`ls -a` lists all files, including those that are invisible files 
+`ls -a` lists all files, including those that are invisible
 
 `ls -lh` prints long format files in a human readable format 
 
