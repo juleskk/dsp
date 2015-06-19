@@ -12,53 +12,53 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-pwd- print working directory
+* pwd: print working directory
 
-hostname- my computer's network name
+* hostname: my computer's network name
 
-mkdir- make directory
+* mkdir: make directory
 
-cd- change directory
+* cd: change directory
 
-ls- list directory
+* ls: list directory
 
-rmdir- remove directory
+* rmdir: remove directory
 
-pushd- push directory
+* pushd: push directory
 
-popd- pop directory
+* popd: pop directory
 
-cp- copy a file or directory
+* cp: copy a file or directory
 
-robocopy- roboust copy
+* robocopy: roboust copy
 
-mv- move a file or directory
+* mv: move a file or directory
 
-more- page through a file
+* more: page through a file
 
-type- print the whole file
+* type: print the whole file
 
-forfiles- run a command on lots of files
+* forfiles: run a command on lots of files
 
-dir -r- find files
+* dir -r: find files
 
-select-string- find things inside files
+* select-string: find things inside files
 
-help- read a manual page
+* help: read a manual page
 
-helpctr- find what man page is appropriate
+* helpctr: find what man page is appropriate
 
-echo- print some arguments
+* echo: print some arguments
 
-set- export/set a new environment variable
+* set: export/set a new environment variable
 
-exit- exit the shell
+* exit: exit the shell
 
-run as-*DANGER* run as super user moot
+* run as: *DANGER* run as super user moot
 
-attrib- change permission modifiers 
+* attrib: change permission modifiers 
 
-ICACLS- change ownnership
+* ICACLS: change ownnership
 
 ---
 
