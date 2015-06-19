@@ -28,6 +28,8 @@ Make a cheat sheet for yourself: a list of commands and what they do, focused on
 
 * popd: pop directory
 
+* touch: make empty file 
+
 * cp: copy a file or directory
 
 * robocopy: roboust copy
