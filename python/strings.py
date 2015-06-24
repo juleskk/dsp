@@ -3,12 +3,6 @@
 
 
 def donuts(count):
-    
-    if count < 10:
-        print ('Number of donuts: %s' % count)
-    else:
-        print ('Number of donuts: many')
-        
     """
     Given an int count of a number of donuts, return a string of the
     form 'Number of donuts: <count>', where <count> is the number
@@ -25,16 +19,13 @@ def donuts(count):
     'Number of donuts: many'
     """
     raise NotImplementedError
-
+    
+    if count < 10:
+        print ('Number of donuts: %s' % count)
+    else:
+        print ('Number of donuts: many')
 
 def both_ends(s):
-    
-    if len(s) < 2: 
-        print ' '
-    
-    else:
-        print (s[0:2] + s[-2:])
-    
     """
     Given a string s, return a string made of the first 2 and the last
     2 chars of the original string, so 'spring' yields 'spng'.
@@ -51,7 +42,11 @@ def both_ends(s):
     'xyyz'
     """
     raise NotImplementedError
-
+    
+    if len(s) < 2: 
+        print ' '
+    else:
+        print (s[0:2] + s[-2:])
 
 def fix_start(s):
     """
@@ -70,6 +65,8 @@ def fix_start(s):
     'donut'
     """
     raise NotImplementedError
+    
+    return s[0]+ s[1:].replace(s[0],'*')
 
 
 def mix_up(a, b):
@@ -88,6 +85,8 @@ def mix_up(a, b):
     'fizzy perm'
     """
     raise NotImplementedError
+    
+    return b[0:2] + a[2:] + " " + a[0:2] + b[2:]
 
 
 def verbing(s):
@@ -105,6 +104,14 @@ def verbing(s):
     'do'
     """
     raise NotImplementedError
+    
+    if len(s) > 2:
+        if s[-3:] == 'ing':
+            return s + 'ly'
+        else:
+            return s + 'ing'
+    else: 
+        return s
 
 
 def not_bad(s):
@@ -125,6 +132,13 @@ def not_bad(s):
     "It's bad yet not"
     """
     raise NotImplementedError
+    
+    if 'not' in s and 'bad' in s and s.index('not') < s.index('bad'):
+        not_word = s.index('not')
+        bad = s.index('bad')
+        return s[0:not_word] + 'good'
+    else:
+        return s
 
 
 def front_back(a, b):
@@ -144,3 +158,8 @@ def front_back(a, b):
     'KitDontenut'
     """
     raise NotImplementedError
+    
+     afront, aback = a[:(len(a) +1)/2], a[(len(a) + 1)/2:]
+    bfront, bback = b[:(len(b) +1)/2], b[(len(b) + 1)/2:]
+    
+    return afront + bfront + aback + bback 
