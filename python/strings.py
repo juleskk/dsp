@@ -135,7 +135,7 @@ def not_bad(s):
     
     if 'not' in s and 'bad' in s and s.index('not') < s.index('bad'):
         not_word = s.index('not')
-        s = s[0:not_word] + 'good'
+        retur  s[0:not_word] + 'good'
     else:
         return s
 
