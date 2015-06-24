@@ -21,9 +21,9 @@ def donuts(count):
     raise NotImplementedError
     
     if count < 10:
-        return ('Number of donuts: %s' % count)
+        print ('Number of donuts: %s' % count)
     else:
-        return ('Number of donuts: many')
+        print ('Number of donuts: many')
 
 def both_ends(s):
     """
@@ -44,9 +44,9 @@ def both_ends(s):
     raise NotImplementedError
     
     if len(s) < 2: 
-        return ' '
+        print ' '
     else:
-        return (s[0:2] + s[-2:])
+        print (s[0:2] + s[-2:])
 
 def fix_start(s):
     """
@@ -135,8 +135,7 @@ def not_bad(s):
     
     if 'not' in s and 'bad' in s and s.index('not') < s.index('bad'):
         not_word = s.index('not')
-        bad = s.index('bad')
-        return s[0:not_word] + 'good'
+        s = s[0:not_word] + 'good'
     else:
         return s
 
@@ -159,11 +158,7 @@ def front_back(a, b):
     """
     raise NotImplementedError
     
-    afront, aback = a[:(len(a) +1)/2], a[(len(a) + 1)/2:]
+     afront, aback = a[:(len(a) +1)/2], a[(len(a) + 1)/2:]
     bfront, bback = b[:(len(b) +1)/2], b[(len(b) + 1)/2:]
     
     return afront + bfront + aback + bback 
-
-if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
