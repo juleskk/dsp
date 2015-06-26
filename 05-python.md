@@ -27,9 +27,18 @@ Both lists and tuples are sequences of values that are indexed by integers, howe
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+>Both sets and lists are 'a collection of objects. A set, however, is unordered, while a list is indexed. That means that sets elements of a set can't be searched by their their index.  `list[0]` would return the first item in the list, but doing so on a set would return a TypeError. Without an index, when searching for an element in a set, one can only check the existence of the element in the set. 
 
+```
+word = 'bookkeeper'
+setex = set(word)
+setex = {x for x in word}
 
+listex = [x for x in word]
+
+print setex
+print listex
+```
 ---
 
 
@@ -37,7 +46,32 @@ REPLACE THIS TEXT WITH YOUR RESPONSE
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+>`lambda` is used to create anonymous functions. If a function will only need to be accessed locally, instead of making a new function, `lambda` can be used as sort of temporary one. `lambda` is mainly used when passing a function as an argument to another function. 
+
+I like the example of temperature conversion, taken from [here](http://www.python-course.eu/lambda.php). 
+
+>without `lambda`:
+```
+def fahrenheit(T):
+    return ((float(9)/5)*T + 32)
+def celsius(T):
+    return (float(5)/9)*(T-32)
+temp = (36.5, 37, 37.5,39)
+
+F = map(fahrenheit, temp)
+C = map(celsius, F)
+```
+>or with `lambda`:
+
+```
+F = map(fahrenheit, temp)
+C = map(celsius, F)
+```
+
+```
+for name in sorted(list_family, key=lambda name: len(name)):
+      print (name)
+```
 
 ---
 
