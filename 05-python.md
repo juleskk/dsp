@@ -41,16 +41,15 @@ print listex
 ```
 ---
 
-
 ---
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->`lambda` is used to create anonymous functions. If a function will only need to be accessed locally, instead of making a new function, `lambda` can be used as sort of temporary one. `lambda` is mainly used when passing a function as an argument to another function. 
+`lambda` is used to create anonymous functions. If a function will only need to be accessed locally, instead of making a new function, `lambda` can be used as sort of temporary one. `lambda` is mainly used when passing a function as an argument to another function. 
 
 I like the example of temperature conversion, taken from [here](http://www.python-course.eu/lambda.php). 
 
->without `lambda`:
+without `lambda`:
 ```
 def fahrenheit(T):
     return ((float(9)/5)*T + 32)
@@ -61,7 +60,7 @@ temp = (36.5, 37, 37.5,39)
 F = map(fahrenheit, temp)
 C = map(celsius, F)
 ```
->or with `lambda`:
+or with `lambda`:
 
 ```
 F = map(fahrenheit, temp)
